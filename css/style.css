@@ -1,0 +1,112 @@
+body {
+    background-color: #f5f5eb;
+    font-size: 1em;
+    font-family: Arial Black, sans-serif;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 5%;
+}
+
+.line {
+    border-top: 1px solid #e3e7e6;
+}
+
+.accordion {
+    color: #0059d9;
+}
+
+.accordion-title:hover {
+    color: black;
+}
+
+.accordion-title {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-item .open {
+    display: none;
+}
+
+.accordion-item:hover .open {
+    display: inline-block;
+
+}
+
+.accordion-input:checked ~ .accordion-title > .open {
+    transform: rotate(50deg);
+    transition: all 0.5s;
+}
+
+.accordion-image {
+    transform: translateY(-10%);
+    animation: ani 1s forwards;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.accordion-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.accordion-image {
+    display: none;
+
+}
+
+.accordion-input:checked ~ .accordion-title {
+    color: black;
+
+}
+
+.accordion-input:checked ~ .accordion-image {
+    display: block;
+}
+
+.imgSize-mobile {
+    width: 90%;
+    height: 40%;
+    padding-top: 30px;
+
+}
+
+@media (min-width: 820px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    .imgSize-mobile {
+        width: 60%;
+        height: 10%;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 2em;
+    }
+
+    .imgSize-mobile {
+        width: 40%;
+        height: 10%;
+    }
+}
