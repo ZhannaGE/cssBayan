@@ -38,7 +38,6 @@ body {
 
 .accordion-item:hover .open {
     display: inline-block;
-
 }
 
 .accordion-input:checked ~ .accordion-title > .open {
@@ -77,16 +76,15 @@ body {
     color: black;
 
 }
-
-.accordion-input:checked ~ .accordion-image {
-    display: block;
-}
-
 .imgSize-mobile {
     width: 90%;
     height: 40%;
     padding-top: 30px;
 
+}
+
+.accordion-input:checked ~ .accordion-image {
+    display: block;
 }
 
 @media (min-width: 820px) {
@@ -95,7 +93,7 @@ body {
     }
 
     .imgSize-mobile {
-        width: 60%;
+        width: 40%;
         height: 10%;
     }
 }
@@ -106,7 +104,7 @@ body {
     }
 
     .imgSize-mobile {
-        width: 40%;
+        width: 30%;
         height: 10%;
     }
 }
